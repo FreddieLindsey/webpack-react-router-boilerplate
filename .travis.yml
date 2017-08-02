@@ -1,0 +1,18 @@
+sudo: false
+
+dist: trusty
+
+language: node_js
+
+cache: yarn
+
+notification:
+  email:
+    success: never
+    failure: change
+
+install:
+  - yarn
+
+script:
+  - yarn run build
