@@ -17,7 +17,8 @@ module.exports = {
   },
   entry: [
     'react-hot-loader/patch',
-    './src/index.js'
+    './src/index.js',
+    './src/index.scss'
   ],
   output: {
     path: path.resolve(__dirname, 'build'),
