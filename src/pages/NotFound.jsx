@@ -32,13 +32,18 @@ export default class NotFound extends Component {
   render = () => (
     <div className={ styles.notFoundContainer } >
       <div className={ styles.notFoundCell} >
+        <h1 className={ styles.notFound404 }>
+          <p className={ styles.notFound404Number }>
+            404
+          </p> '{ window.location.pathname }'
+        </h1>
         <h2 className={ styles.notFoundText } >
-          Unfortunately, the page '{ window.location.pathname }' was not found.
+          Unfortunately, the page was not found.
         </h2>
-        <hr />
-        <h4 className={ styles.notFoundText } >
-          You will be automatically redirected in { this.state.timeLeft } seconds
-        </h4>
+        <br />
+        <h3 className={ styles.notFoundText } >
+          Automatic redirect in { this.state.timeLeft } seconds
+        </h3>
       </div>
     </div>
   )

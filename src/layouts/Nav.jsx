@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 
+import pkg from '../../package.json'
+
 export default class Nav extends Component {
 
   static displayName = 'Nav'
@@ -12,7 +14,9 @@ export default class Nav extends Component {
   renderLinks = () =>
     this.getLinks().map((link, index) => (
       <li key={ index } className='nav-item'>
-        <NavLink className='nav-link' to={ link.href } >
+        <NavLink
+          className='nav-link' to={ link.href }
+          data-toggle='collapse' data-target='.navbar-collapse.in' >
           { link.name }
         </NavLink>
       </li>
@@ -31,7 +35,7 @@ export default class Nav extends Component {
             <span className="icon-bar" />
             <span className="icon-bar" />
           </button>
-          <NavLink className="navbar-brand" to='/' >Brand</NavLink>
+          <NavLink className="navbar-brand" to='/' >{ pkg.title }</NavLink>
         </div>
 
         <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

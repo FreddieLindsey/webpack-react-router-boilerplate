@@ -8,7 +8,6 @@
   left: 0;
   min-height: calc(100vh - 50px);
   position: fixed;
-  text-align: center;
   width: calc(100vw);
 }
 
@@ -17,8 +16,27 @@
   vertical-align: middle;
 }
 
-.not-found-text {
+%not-found {
   margin: 0 auto;
   max-width: calc(60vw);
+  text-align: center;
   text-shadow: 1px 1px 3px darken($text-not-found-colour, 60%);
+}
+
+.not-found-text {
+  @extend %not-found;
+}
+
+.not-found-404 {
+  @extend %not-found;
+  font-size: 4em;
+  margin: 0 auto 20px;
+  max-width: calc(80vw);
+}
+
+.not-found-404-number {
+  @extend %not-found;
+  font-size: 2em;
+  margin: 0 auto 20px;
+  max-width: calc(80vw);
 }

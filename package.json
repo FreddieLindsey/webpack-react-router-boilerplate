@@ -2,6 +2,7 @@
   "name": "webpack-react-router-boilerplate",
   "version": "0.0.1",
   "description": "Webpack React-Router Boilerplate",
+  "title": "WRR Boilerplate",
   "main": "src/index.js",
   "scripts": {
     "build": "webpack --config webpack.config.js",
@@ -42,6 +43,7 @@
     "expose-loader": "^0.7.3",
     "file-loader": "^0.11.2",
     "html-webpack-plugin": "^2.28.0",
+    "jquery": "^3.2.1",
     "json-loader": "^0.5.4",
     "mocha": "^3.2.0",
     "node-sass": "^4.5.0",
