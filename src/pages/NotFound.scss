@@ -10,10 +10,6 @@
   position: fixed;
   text-align: center;
   width: calc(100vw);
-
-  // @media screen and (min-width: $tablet) {
-  //   min-height: calc(100vh - 50px);
-  // }
 }
 
 .not-found-cell {
@@ -24,4 +20,5 @@
 .not-found-text {
   margin: 0 auto;
   max-width: calc(60vw);
+  text-shadow: 1px 1px 3px darken($text-not-found-colour, 60%);
 }
