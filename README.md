@@ -1,5 +1,7 @@
 # Webpack React-Router Boilerplate
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/FreddieLindsey/webpack-react-router-boilerplate.svg)](https://greenkeeper.io/)
+
 Boilerplate using Webpack, React, React Router (DOM)
 
 ## Install
